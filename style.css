@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: hsl(185, 75%, 39%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98.5vh;
+  background: url("images/bg-pattern-top.svg") top -35vh left -50vh no-repeat,
+    url("images/bg-pattern-bottom.svg") bottom -35vh right -50vh no-repeat;
+  background-size: 75vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+}
+
+.top {
+  height: 150px;
+  background: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: 375px 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.photo {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 120px;
+  height: 120px;
+  background-image: url("images/image-victor.jpg");
+  background-size: cover;
+  position: fixed;
+  left: 50%;
+}
+
+.info {
+  height: 160px;
+  background: white;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+.name {
+  font-weight: 700;margin-top: 4em;
+}
+
+.age {
+  font-weight: 400;
+  color: rgba(45, 50, 72, 0.7);
+}
+
+.city {
+    font-size: 14px;
+  color: rgba(45, 50, 72, 0.7);
+  margin-top: 1em;
+}
+
+.stats {
+  display: flex;
+  height: 100px;
+  background: white;
+  border-top: 1px solid rgba(150, 150, 150, 0.3);
+  border-radius: 0 0 10px 10px;
+  justify-content: space-evenly;
+}
+
+.followers,
+.likes,
+.photos {
+  align-self: center;
+  font-weight: 700;
+}
+
+.followers-letters,
+.likes-letters,
+.photos-letters {
+  font-weight: 400;
+  font-size: 11px;
+  color: rgba(45, 50, 72, 0.7);
+  letter-spacing: 1.5px;
+  margin-top: .5em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
