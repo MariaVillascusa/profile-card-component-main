@@ -14,8 +14,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 98.5vh;
-  background: url("images/bg-pattern-top.svg") top -35vh left -50vh no-repeat,
-    url("images/bg-pattern-bottom.svg") bottom -35vh right -50vh no-repeat;
+  background: url("images/bg-pattern-top.svg") top -30vh left -45vh no-repeat,
+    url("images/bg-pattern-bottom.svg") bottom -30vh right -45vh no-repeat;
   background-size: 75vh;
 }
 
@@ -26,45 +26,52 @@ body {
 }
 
 .top {
-  height: 150px;
+  height: 165px;
   background: url("images/bg-pattern-card.svg");
   background-repeat: no-repeat;
-  background-size: 375px 150px;
-  border-radius: 10px 10px 0 0;
+  background-size: 375px 165px;
+  border-radius: 15px 15px 0 0;
 }
 
-.photo {
+.image {
   border-radius: 50%;
   border: 5px solid white;
-  width: 120px;
-  height: 120px;
-  background-image: url("images/image-victor.jpg");
-  background-size: cover;
-  position: fixed;
-  left: 50%;
+  width: 110px;
+  height: 110px;
+  position: relative;
+  z-index: 50;
+}
+
+.avatar {
+  margin: auto;
+  margin-top: -69px;
 }
 
 .info {
   height: 160px;
   background: white;
   text-align: center;
+  z-index: 1;
+  margin-top: -68px;
 }
 
 p {
   text-align: center;
 }
 .name {
-  font-weight: 700;margin-top: 4em;
+  font-weight: 700;
+  margin-top: 5em;
+  color: hsl(229, 23%, 23%);
 }
 
 .age {
   font-weight: 400;
-  color: rgba(45, 50, 72, 0.7);
+  color: rgba(45, 50, 72, 0.8);
 }
 
 .city {
-    font-size: 14px;
-  color: rgba(45, 50, 72, 0.7);
+  font-size: 14px;
+  color: rgba(45, 50, 72, 0.8);
   margin-top: 1em;
 }
 
@@ -73,7 +80,7 @@ p {
   height: 100px;
   background: white;
   border-top: 1px solid rgba(150, 150, 150, 0.3);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 15px 15px;
   justify-content: space-evenly;
 }
 
@@ -82,6 +89,7 @@ p {
 .photos {
   align-self: center;
   font-weight: 700;
+  color: hsl(229, 23%, 23%);
 }
 
 .followers-letters,
@@ -91,7 +99,7 @@ p {
   font-size: 11px;
   color: rgba(45, 50, 72, 0.7);
   letter-spacing: 1.5px;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .attribution {
