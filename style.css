@@ -9,6 +9,13 @@ body {
   background: hsl(185, 75%, 39%);
 }
 
+.circle1,
+.circle2,
+.attribution,
+.attribution a {
+  display: none;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -23,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 375px;
+  margin: auto;
 }
 
 .top {
@@ -102,10 +110,42 @@ p {
   margin-top: 0.5em;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+@media screen and (min-width: 770px) {
+  body {
+    overflow: hidden;
+  }
+
+  .container {
+    background: none;
+  }
+
+  .circle1,
+  .circle2{
+    display: block;
+  }
+
+  .attribution,
+  .attribution a {
+    display: flex
+  }
+
+  .circle1 {
+    position: absolute;
+    z-index: -1;
+    margin: -25rem -32.5rem;
+  }
+  .circle2 {
+    position: absolute;
+    z-index: -1;
+    margin: 27rem 35rem;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: rgba(45, 50, 72, 0.9);
+    text-decoration: none;
+  }
 }
