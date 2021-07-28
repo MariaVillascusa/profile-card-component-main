@@ -116,28 +116,14 @@ p {
   }
 
   .container {
-    background: none;
-  }
-
-  .circle1,
-  .circle2{
-    display: block;
+    background: url("images/bg-pattern-top.svg") top -75vh left -35vh no-repeat,
+    url("images/bg-pattern-bottom.svg") bottom -91vh right -30vh no-repeat;
+    background-size:initial;
   }
 
   .attribution,
   .attribution a {
     display: flex
-  }
-
-  .circle1 {
-    position: absolute;
-    z-index: -1;
-    margin: -25rem -32.5rem;
-  }
-  .circle2 {
-    position: absolute;
-    z-index: -1;
-    margin: 27rem 35rem;
   }
 
   .attribution {
